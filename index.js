@@ -164,6 +164,8 @@ function ONpage1(){
 
 function OFFpage1(){
     Merc_page.style.opacity = "0";
+    hidemercuryInfo();
+    k_mercury = 1;
     Merc_page.style.pointerEvents = "none";
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
@@ -180,6 +182,8 @@ function ONpage2(){
 
 function OFFpage2(){
     Nept_page.style.opacity = "0";
+    hideneptuneInfo();
+    k_neptune = 1;
     Nept_page.style.pointerEvents = "none";
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
@@ -197,6 +201,8 @@ function ONpage3(){
 function OFFpage3(){
     Uran_page.style.opacity = "0";
     Uran_page.style.pointerEvents = "none";
+    hideUranusInfo();
+    k_uranus = 1;
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
 }
@@ -214,6 +220,8 @@ function ONpage4(){
 function OFFpage4(){
     satu_page.style.opacity = "0";
     satu_page.style.pointerEvents = "none";
+    hidesaturnInfo();
+    k_saturn = 1;
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
 }
@@ -232,6 +240,8 @@ function ONpage5(){
 function OFFpage5(){
     jupi_page.style.opacity = "0";
     jupi_page.style.pointerEvents = "none";
+    k_jupiter = 1;
+    hidejupiterInfo();
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
 }
@@ -252,6 +262,8 @@ function ONpage6(){
 function OFFpage6(){
     mars_page.style.opacity = "0";
     mars_page.style.pointerEvents = "none";
+    hidemarsInfo();
+    k_mars = 1;
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
 }
@@ -269,6 +281,8 @@ function ONpage7(){
 function OFFpage7(){
     earth_page.style.opacity = "0";
     earth_page.style.pointerEvents = "none";
+    k_earth = 1;
+    hideearthInfo();
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
 }
@@ -289,6 +303,8 @@ function ONpage8(){
 function OFFpage8(){
     venus_page.style.opacity = "0";
     venus_page.style.pointerEvents = "none";
+    hidevenusInfo();
+    k_venus = 1;
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
 }
@@ -541,4 +557,34 @@ function showmercuryInfo(){
 function hidemercuryInfo(){
     mercury_extra_info.style.opacity = "0";
     mercury_extra_info.style.animation = "makesmaller 0.6s forwards";
+}
+
+
+
+
+const venus_extra_info = document.getElementById('venus-extra-info');
+
+
+
+
+
+var k_venus = 1;
+function choosevenus(){
+    if(k_venus == 1){
+        showvenusInfo();
+        k_venus = 0;
+    }else if(k_venus == 0){
+        hidevenusInfo();
+        k_venus = 1;
+    }
+}
+
+function showvenusInfo(){
+    venus_extra_info.style.opacity = "1";
+    venus_extra_info.style.animation = "makebikerz 0.6s forwards";
+}
+
+function hidevenusInfo(){
+    venus_extra_info.style.opacity = "0";
+    venus_extra_info.style.animation = "makesmaller 0.6s forwards";
 }
