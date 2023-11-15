@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div id="suns-rays"></div>
+
+
+    <img src="Sun-no png (2).png" id="Sun">
+    
+    <div id="mercury-box" onmouseover="makeMercuryOP()" onmouseleave="makeMercuryOFF()" onclick="ONpage1()">
+    <img src="merciry.png" id="mercury">
+    <div id="mercury-Txt">
+        <span>Mercury</span>
+    </div>
+    </div>
+
+    <div id="venus-box" onmouseover="makeVenusOP()" onmouseleave="makeVenusOFF()" onclick="ONpage8()">
+    <img src="venus.png" id="venus">
+    <div id="venus-text">
+        <span>Venus</span>
+    </div>
+    </div>
+
+    <div id="earth-box" onmouseover="makeEarthOP()" onmouseleave="makeEarthOFF()" onclick="ONpage7()">
+    <img src="Earth.png" id="earth">
+    <div id="earth-text">
+        <span>Earth</span>
+    </div>
+    </div>
+
+
+    <div id="mars-box" onmouseover="makeMarsOP()" onmouseleave="makeMarsOFF()" onclick="ONpage6()">
+    <img src="Mars.png" id="Mars">
+    <div id="mars-text">
+        <span>Mars</span>
+    </div>
+    </div>
+
+    <div id="jupiter-box" onmouseover="makejupiterOP()" onmouseleave="makejupiterOFF()" onclick="ONpage5()">
+    <img src="jupiter.png" id="jupiter">
+    <div id="jupiter-text">
+        <span>Jupiter</span>
+    </div>
+    </div>
+
+    <div id="saturn-box" onmouseover="makeSaturnOP()" onmouseleave="makeSaturnOFF()" onclick="ONpage4()">
+    <img src="saturn.png" id="saturn">
+    <div id="saturn-text">
+        <span>Saturn</span>
+    </div>
+    </div>
+
+    <div id="uranus-box" onmouseover="makeuranusOP()" onmouseleave="makeuranusOFF()" onclick="ONpage3()">
+    <img src="uranus.png" id="uranus">
+    <div id="uranus-text">
+        <span>Uranus</span>
+    </div>
+    </div>
+
+    <div id="neptune-box" onmouseover="makeneptuneOP()" onmouseleave="makeneptuneOFF()" onclick="ONpage2()">
+    <img src="neptune.png" id="neptune">
+    <div id="neptune-text">
+        <span>Neptune</span>
+    </div>
+    </div>
+
+
+    <div id="planet-info">
+
+        <div id="mercury-info">
+            <h1>Mercury</h1>
+            <h4>Orbit: 87,929 Days</h4>
+            <h4>Satelites: none</h4>
+            <h4>Diameter: 4.879,4KM</h4>
+        </div>
+
+        <div id="venus-info">
+            <h1>Venus</h1>
+            <h4>Orbit: 224,700 Days</h4>
+            <h4>Satelites: none</h4>
+            <h4>Diameter: 12.104KM</h4>
+        </div>
+
+        <div id="earth-info">
+            <h1>Earth</h1>
+            <h4>Orbit: 365,256 Days</h4>
+            <h4>Satelites: (1)</h4>
+            <h4>Diameter: 12.756KM</h4>
+        </div>
+
+        <div id="mars-info">
+            <h1>Mars</h1>
+            <h4>Orbit: 686.980 Days</h4>
+            <h4>Satelites: (2)</h4>
+            <h4>Diameter: 6.779 KM</h4>
+        </div>
+
+        <div id="jupiter-info">
+            <h1>Jupiter</h1>
+            <h4>Orbit: 4,332.59 Days</h4>
+            <h4>Satelites: (95)</h4>
+            <h4>Diameter: 142,800 KM</h4>
+        </div>
+
+        <div id="saturn-info">
+            <h1>Saturn</h1>
+            <h4>Orbit: 10.832 Days</h4>
+            <h4>Satelites: (83)</h4>
+            <h4>Diameter: 120,536KM</h4>
+        </div>
+
+        <div id="uranus-info">
+            <h1>Uranus</h1>
+            <h4>Orbit: 30.799 Days</h4>
+            <h4>Satelites: (27)</h4>
+            <h4>Diameter: 50,714KM</h4>
+        </div>
+
+
+        <div id="neptune-info">
+            <h1>Neptune</h1>
+            <h4>Orbit: 60.190 Days</h4>
+            <h4>Satelites: (14)</h4>
+            <h4>Diameter: 55,528KM</h4>
+        </div>
+
+
+
+    </div>
+
+    <div id="help">To see all attemted/failed/successfull landings on any selestial body just click on top of the planet/moon you are intrested in seeing</div>
+
+
+    <!-- PAGES HTML -->
+
+    <div id="Merc-page">
+        <div id="merc-hold">
+        <img src="merciry.png" id="Merc-page-img">
+        <div id="land-box">
+            <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+            <h5>&#128165;</h5>
+        </div>
+
+        </div>
+        <div id="helper">
+            <h4>&#128640; - Landed - 0</h4>
+            <h4>&#128165; - Crashed - 1</h4>
+            <h4>&#10060; - Failed Attempt - 0</h4>
+        </div>
+        
+        <div id="merc-infoz">
+            <h2>INFO</h2>
+            <h4>There has only been 1 landing (crash) on Mercury. It was part of NASA's MESSENGER mission, the spacecraft orbited the planet from 2011 to 2015, and later intensionally crashed on the planet</h4>
+        </div>
+
+        <div id="back-1" onclick="OFFpage1()">BACK</div>
+
+        <div id="Extra-info-earth" class="mercury-extra" onclick="choosemercury()">
+            <div id="line-dot">
+                <div id="dot"></div>
+                <div id="line"></div>
+            </div>
+            <div id="line-dot">
+                <div id="dot"></div>
+                <div id="line"></div>
+            </div>
+            <div id="line-dot">
+                <div id="dot"></div>
+                <div id="line"></div>
+            </div>
+        </div>
+
+
+
+        <div id="mercury-extra-info" class="extra-info" >
+            <div id="extra-info-epxlain">
+                <div id="extra-info-epxlain-1">Mission</div>
+                <div id="extra-info-epxlain-2">Impact Date</div>
+                <div id="extra-info-epxlain-3">Nation</div>
+                <div id="extra-info-epxlain-4">Result</div>
+            </div>
+            <div id="mission-info-main">
+                <div id="mission-name">
+                    <span>MESSENGER</span>
+                </div>
+                <div id="mission-impactdate">
+                    <h3>30 April 2015</h3>
+                </div>
+                <div id="mission-nation">
+                    <img src="1200px-Flag_of_the_United_States.svg.webp">
+                </div>
+                <div id="mission-result">
+                    <span>&#128165;</span>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+
+
+    </div>
+
+
+    <div id="Neptune-page">
+        <div id="Neptune-hold">
+            <img src="neptune.png" id="Nept-page-img">
+            
+    
+            </div>
+            <div id="helper">
+                <h4>&#128640; - Landed - 0</h4>
+                <h4>&#128165; - Crashed - 0</h4>
+                <h4>&#10060; - Failed Attempt - 0</h4>
+            </div>
+            
+            <div id="merc-infoz">
+                <h2>INFO</h2>
+                <h4>There have been no attempts to land/crash on the planet</h4>
+            </div>
+    
+            <div id="back-2" onclick="OFFpage2()">BACK</div>
+    
+
+            <div id="Extra-info-earth" class="neptune-extra" onclick="chooseneptune()">
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+            </div>
+
+            <div id="neptune-extra-info" class="extra-info">
+                THERE HAVE BEEN NO ATTEMPTS TO LAND ON THE PLANET
+            </div>
+
+    </div>
+
+
+    <div id="uranus-page">
+        <div id="uranus-hold">
+            <img src="uranus.png" id="Ur-page-img">
+            
+    
+            </div>
+            <div id="helper">
+                <h4>&#128640; - Landed - 0</h4>
+                <h4>&#128165; - Crashed - 0</h4>
+                <h4>&#10060; - Failed Attempt - 0</h4>
+            </div>
+            
+            <div id="merc-infoz">
+                <h2>INFO</h2>
+                <h4>There have been no attempts to land/crash on the planet</h4>
+            </div>
+    
+            <div id="back-3" onclick="OFFpage3()">BACK</div>
+    
+            <div id="Extra-info-earth" class="uranus-extra" onclick="chooseUranus()">
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+            </div>
+
+            <div id="uranus-extra-info" class="extra-info">
+                <span>NO LANDINGS HAVE TAKEN PLACE ON THE PLANET</span>
+            </div>
+
+    </div>
+
+
+    <div id="saturn-page" style="opacity: 0;">
+        <div id="saturn-hold">
+            <img src="saturn.png" id="satu-page-img">
+            <div id="land-box" class="crash-1">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128165;</h5>
+                </div>
+            </div>
+    
+            </div>
+            <div id="helper">
+                <h4>&#128640; - Landed - 0</h4>
+                <h4>&#128165; - Crashed - 1</h4>
+                <h4>&#10060; - Failed Attempt - 0</h4>
+            </div>
+            
+            <div id="merc-infoz">
+                <h2>INFO</h2>
+                <h4>On the 15th of Semptember 2017, The Cassino orbiter after a mission that started in 2004 and ended in 2017, intensionally crashed into saturn and became the first and last probe to enter the planets atmosphere</h4>
+            </div>
+    
+            <div id="back-4" onclick="OFFpage4()">BACK</div>
+    
+
+            <div id="Extra-info-earth" class="saturn-extra" onclick="choosesaturn()">
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+            </div>
+
+
+            <div id="saturn-extra-info" class="extra-info">
+                <div id="extra-info-epxlain">
+                    <div id="extra-info-epxlain-1">Mission</div>
+                    <div id="extra-info-epxlain-2">Impact Date</div>
+                    <div id="extra-info-epxlain-3">Nation</div>
+                    <div id="extra-info-epxlain-4">Result</div>
+                </div>
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Cassini orbiter</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>15 September 2017</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128165;</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+    <div id="jupiter-page">
+        <div id="jupiter-hold">
+            <img src="jupiter.png" id="jupi-page-img">
+            <div id="land-box" class="crash-3">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128165;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-2">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128165;</h5>
+                </div>
+            </div>
+    
+            </div>
+            <div id="helper">
+                <h4>&#128640; - Landed - 0</h4>
+                <h4>&#128165; - Crashed - 2</h4>
+                <h4>&#10060; - Failed Attempt - 0</h4>
+            </div>
+            
+            <div id="merc-infoz">
+                <h2>INFO</h2>
+                <h4>With 2 missions in 1995 and 2003, both named after Galileo, the man that made the first detailed observation of the planet. Jupiter is one of the most well reserched planets in our solar system</h4>
+            </div>
+    
+            <div id="back-5" onclick="OFFpage5()">BACK</div>
+    
+
+            <div id="Extra-info-earth" class="jupiter-extra" onclick="choosejupiter()">
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+            </div>
+
+
+
+
+            <div id="jupiter-extra-info" class="extra-info">
+                <div id="extra-info-epxlain">
+                    <div id="extra-info-epxlain-1">Mission</div>
+                    <div id="extra-info-epxlain-2">Impact Date</div>
+                    <div id="extra-info-epxlain-3">Nation</div>
+                    <div id="extra-info-epxlain-4">Result</div>
+                </div>
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Galileo atmospheric probe</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>7 December 1995</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128165;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Galileo</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>21 September 2003</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128165;</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+
+
+
+    <div id="mars-page">
+        <div id="mars-hold">
+            <img src="Mars.png" id="mars-page-img">
+            
+
+            <div id="land-box" class="crash-4">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128165;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-5">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-6">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-7">
+                <div>
+                    <img src="china.png" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-8">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-9">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-10">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-11">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+
+            <div id="land-box" class="crash-12">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-13">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-14">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div id="land-box" class="crash-17">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-18">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-19">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-20">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-21">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            </div>
+            <div id="helper">
+                <h4>&#128640; - Landed - 11</h4>
+                <h4>&#128165; - Crashed - 1</h4>
+                <h4>&#10060; - Failed Attempt - 4</h4>
+            </div>
+            
+            <div id="merc-infoz">
+                <h2>INFO</h2>
+                <h4>Mars with its 11 successfull landing takes 2nd place in our solar system, only being beten by venus just by one more mission. but unlike venus whose last mission landed in 1985 ,mars is regularly visited even today</h4>
+            </div>
+    
+            <div id="back-6" onclick="OFFpage6()">BACK</div>
+    
+
+
+
+            <div id="Extra-info-earth" class="mars-extra" onclick="choosemars()">
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+            </div>
+
+
+
+
+            <div id="mars-extra-info" class="extra-info">
+                <div id="extra-info-epxlain">
+                    <div id="extra-info-epxlain-1">Mission</div>
+                    <div id="extra-info-epxlain-2">Impact Date</div>
+                    <div id="extra-info-epxlain-3">Nation</div>
+                    <div id="extra-info-epxlain-4">Result</div>
+                </div>
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Mars 2 lander	</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>	27 November 1971</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128165;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Mars 3 lander</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>2 December 1971</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Mars 6 lander</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>12 March 1974</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Viking 1 lander</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>20 July 1976</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Viking 2 lander</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>3 September 1976</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Mars Pathfinder/ Sojourner rover</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>4 July 1997</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Mars Polar Lander</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>3 December 1999</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Beagle 2</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>25 December 2003</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="europe.png">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>MER-A Spirit</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>3 January 2004</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>MER-B Opportunity</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>25 January 2004</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Phoenix</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>25 May 2008</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Curiosity</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>6 August 2012</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>ExoMars Schiaparelli</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>19 October 2016</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="europe.png">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Perseverance</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>18 February 2021</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Tianwen-1</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>14 May 2021</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="china.png">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+
+
+
+    <div id="earth-page">
+        <div id="earth-hold">
+            <img src="Earth.png" id="earth-page-img">
+            
+    
+            </div>
+            <div id="helper">
+                <h4>&#128640; - Landed - </h4>
+                <h4>&#128165; - Crashed - </h4>
+                <h4>&#10060; - Failed Attempt - </h4>
+            </div>
+            
+            <div id="merc-infoz">
+                <h2>INFO</h2>
+                <h4>Earth has served as the starting point for every mission.</h4>
+            </div>
+    
+            <div id="back-7" onclick="OFFpage7()">BACK</div>
+    
+
+            <div id="Extra-info-earth" class="earth-extra" onclick="chooseearth()">
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+            </div>
+
+
+            <div id="earth-extra-info" class="extra-info">
+                Earth has served as the starting point for every mission
+            </div>
+
+
+
+    </div>
+
+
+
+    <div id="venus-page">
+        <div id="venus-hold">
+            <img src="venus.png" id="venus-page-img">
+            
+
+
+            <div id="land-box" class="crash-4">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-5">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-6">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-7">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-8">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-9">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-10">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-11">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+
+            <div id="land-box" class="crash-12">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-13">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-14">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+
+            <div id="land-box" class="crash-15">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-26">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#128640;</h5>
+                </div>
+            </div>
+
+
+
+
+            <div id="land-box" class="crash-17">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-18">
+                <div>
+                    <img src="1200px-Flag_of_the_United_States.svg.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-19">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-20">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-21">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+            <div id="land-box" class="crash-22">
+                <div>
+                    <img src="ussr.webp" alt="">
+                <h5>&#10060;</h5>
+                </div>
+            </div>
+
+
+
+            </div>
+            <div id="helper">
+                <h4>&#128640; - Landed - 12</h4>
+                <h4>&#128165; - Crashed - 0</h4>
+                <h4>&#10060; - Failed Attempt - 6</h4>
+            </div>
+            
+            <div id="merc-infoz">
+                <h2>INFO</h2>
+                <h4>With 10 successfull landing by the soviet union and 2 by the USA, venus is the planet with the most successfull landings, although missions havent gone there since 1985, due to the end of cold war tensions, and mars being an easier and more intresting target.</h4>
+            </div>
+    
+            <div id="back-8" onclick="OFFpage8()">BACK</div>
+    
+
+
+            <div id="Extra-info-earth" class="venus-extra">
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+                <div id="line-dot">
+                    <div id="dot"></div>
+                    <div id="line"></div>
+                </div>
+            </div>
+
+
+
+
+            <div id="mars-extra-info" class="extra-info">
+                <div id="extra-info-epxlain">
+                    <div id="extra-info-epxlain-1">Mission</div>
+                    <div id="extra-info-epxlain-2">Impact Date</div>
+                    <div id="extra-info-epxlain-3">Nation</div>
+                    <div id="extra-info-epxlain-4">Result</div>
+                </div>
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 3	</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>1 March 1966</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 4</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>23 October 1967	</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 5	</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>16 May 1969</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 6</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>17 May 1969</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 7</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>	15 December 1970</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 8</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>22 July 1972</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 9</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>22 October 1975</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 10</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>	25 October 1975</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Pioneer (Day Probe)</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>9 December 1978</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Pioneer (Night Probe)</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>9 December 1978</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Pioneer (North Probe)</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>9 December 1978</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Pioneer (North Probe)</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>9 December 1978</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="1200px-Flag_of_the_United_States.svg.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#10060;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 12</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>21 December 1978</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 11</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>25 December 1978</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 13</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>1 March 1982</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Venera 14</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>5 March 1982</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Vega 1</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>11 June 1985</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+
+
+                <div id="mission-info-main">
+                    <div id="mission-name">
+                        <span>Vega 2</span>
+                    </div>
+                    <div id="mission-impactdate">
+                        <h3>15 June 1985</h3>
+                    </div>
+                    <div id="mission-nation">
+                        <img src="ussr.webp">
+                    </div>
+                    <div id="mission-result">
+                        <span>&#128640;</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+    </div>
+
+    <script src="index.js"></script>
+    
+
+    <div id="Star1"></div>
+    <div id="Star2"></div>
+    <div id="Star3"></div>
+    <div id="Star4"></div>
+    <div id="Star5"></div>
+
+</body>
+</html>

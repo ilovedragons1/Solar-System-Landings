@@ -1,0 +1,2395 @@
+@import url('https://fonts.cdnfonts.com/css/bloomer-demo');
+
+
+h4{
+    color: rgb(255, 94, 0);
+}
+
+img{
+    border-radius: 2px;
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
+    overflow-x: visible;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#help{
+    width: 220px;
+    height: 150px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+#starz{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#suns-rays{
+    width: 2200px;
+    height: 200vh;
+    border-radius: 0px 50% 50% 0px;
+    background: linear-gradient(450deg, rgba(255, 60, 0, 0.822) 1%,rgba(0, 0, 0, 0) 1000px);
+    position: absolute;
+    top: -500px;
+    left: -500px;
+    pointer-events: none;
+}
+
+#Sun{
+    width: 2000px;
+    height: 2000px;
+    animation: rotate 2000s linear infinite;
+    position: relative;
+    bottom: 120px;
+    position: absolute;
+    left: -1680px;
+    bottom: -500px;
+}
+
+#mercury-box{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 225px;
+    bottom: 470px;
+    border-radius: 50%;
+}
+
+#mercury-box:hover{
+    cursor: pointer;
+    transform: scale(1.026);
+}
+
+#mercury{
+    width: 50px;
+    border-radius: 50%;
+    animation: rotate 180s linear infinite;
+}
+
+#mercury-Txt{
+    width: 90px;
+    height: 50px;
+    border-radius: 14px;
+    position: relative;
+    bottom: -6px;
+    left: -19px;
+    z-index: 5;
+    background-color: rgba(50, 185, 102, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bloomer DEMO, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#mercury-Txt span{
+    color: rgb(19, 194, 194);
+    font-size: 20px; 
+}
+
+#venus{
+    width: 79px;
+    position: relative;
+    bottom: 5px;
+    right: 9px;
+    animation: rotate 240s linear infinite;
+    z-index: 6;
+}
+
+#venus-text{
+    width: 90px;
+    height: 50px;
+    border-radius: 14px;
+    position: relative;
+    bottom: -6px;
+    left: -15px;
+    z-index: 5;
+    background-color: rgba(50, 185, 102, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bloomer DEMO, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#venus-text span{
+    color: rgb(19, 194, 194);
+    font-size: 20px; 
+}
+
+#venus-box{
+    position: absolute;
+    left: 320px;
+    bottom: 460px;
+    width: 61px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#venus-box:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    opacity: 1;
+}
+
+#venus-info{
+    opacity: 0;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    border-radius: 16px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+#venus-info *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#venus-info h4{
+    margin-top: 10px;
+}
+
+#earth{
+    width: 87px;
+    position: relative;
+    top: -0.5px;
+    right: 0px;
+    animation: rotate 240s linear infinite;
+}
+
+#earth-info{
+    opacity: 0;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    border-radius: 16px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+#earth-info *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#earth-info h4{
+    margin-top: 10px;
+}
+
+#earth-text{
+    width: 90px;
+    height: 50px;
+    border-radius: 14px;
+    position: relative;
+    bottom: -10px;
+    left: -2px;
+    z-index: 5;
+    background-color: rgba(50, 185, 102, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bloomer DEMO, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#earth-text span{
+    color: rgb(19, 194, 194);
+    font-size: 20px; 
+}
+
+#earth-box{
+    width: 86px;
+    height: 85.5px;
+    position: absolute;
+    left: 430px;
+    bottom: 451px;
+    border-radius: 50%; 
+    z-index: 0;
+}
+
+#earth-box:hover{
+    transform: scale(1.018);
+    cursor: pointer;
+}
+
+#Mars{
+    width: 94px;
+    position: relative;
+    right: 21px;
+    animation: rotate 180s linear infinite;
+    z-index: 12;
+}
+
+#mars-box{
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 560px;
+    bottom: 466px; 
+    border-radius: 50%;
+}
+
+#mars-box:hover{
+    transform: scale(1.026);
+    cursor: pointer;
+}
+
+#mars-info{
+    opacity: 0;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    border-radius: 16px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+#mars-info *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#mars-info h4{
+    margin-top: 10px;
+}
+
+#mars-text{
+    width: 90px;
+    height: 50px;
+    border-radius: 14px;
+    position: relative;
+    bottom: -16px;
+    left: -18px;
+    z-index: 5;
+    background-color: rgb(15, 112, 52);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bloomer DEMO, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#mars-text span{
+    color: rgb(19, 194, 194);
+    font-size: 20px; 
+}
+
+#jupiter{
+    width: 494px;
+    animation: rotate 600s linear infinite;    
+    pointer-events: none;
+    position: relative;
+    right: 110px;
+    bottom: 2px;
+}
+
+#jupiter-box{
+    width: 281px;
+    height: 274px;
+    position: absolute;
+    left: 670px;
+    bottom: 356px; 
+    border-radius: 50%;
+}
+
+#jupiter-box:hover{
+    transform: scale(1.010);
+    cursor: pointer;
+}
+
+
+#jupiter-info{
+    opacity: 0;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    border-radius: 16px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+#jupiter-info *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#jupiter-info h4{
+    margin-top: 10px;
+}
+
+#jupiter-text{
+    width: 90px;
+    height: 50px;
+    border-radius: 14px;
+    position: relative;
+    bottom: -20px;
+    left: 92px;
+    z-index: 5;
+    background-color: rgb(15, 112, 52);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bloomer DEMO, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#jupiter-text span{
+    color: rgb(19, 194, 194);
+    font-size: 20px; 
+}
+
+#saturn{
+    width: 494px; 
+    position: relative;
+    bottom: 106px;
+    right: 166px;
+    animation: rotate 300s linear infinite;
+    pointer-events: none;
+    pointer-events: none;
+}
+
+#saturn-box{
+    width: 168px;
+    height: 164px;
+    position: absolute;
+    left: 1120px;
+    bottom: 390px; 
+    border-radius: 50%;
+}
+
+#saturn-box:hover{
+    transform: scale(1.012);
+    cursor: pointer;
+}
+
+#saturn-info{
+    opacity: 0;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    border-radius: 16px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+#saturn-info *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#saturn-info h4{
+    margin-top: 10px;
+}
+
+#saturn-text{
+    width: 90px;
+    height: 50px;
+    border-radius: 14px;
+    position: relative;
+    bottom: 175px;
+    left: 42px;
+    z-index: 5;
+    background-color: rgb(15, 112, 52);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bloomer DEMO, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#saturn-text span{
+    color: rgb(19, 194, 194);
+    font-size: 20px; 
+}
+
+#uranus{
+    width: 334px;
+    animation: rotate 150s linear infinite;
+    pointer-events: none;
+    position: relative;
+    bottom: 60px;
+    right: 100px;
+}
+
+#uranus-box{
+    width: 134px;
+    height: 133px;
+    border-radius: 50%;
+    position: absolute;
+    left: 1425px;
+    bottom: 396px;
+}
+
+#uranus-box:hover{
+    transform: scale(1.013);
+    cursor: pointer;
+}
+
+
+#uranus-info{
+    opacity: 0;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    border-radius: 16px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+#uranus-info *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#uranus-info h4{
+    margin-top: 10px;
+}
+
+#uranus-text{
+    width: 90px;
+    height: 50px;
+    border-radius: 14px;
+    position: relative;
+    bottom: 95px;
+    left: 21px;
+    z-index: 5;
+    background-color: rgb(15, 112, 52);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bloomer DEMO, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#uranus-text span{
+    color: rgb(19, 194, 194);
+    font-size: 20px; 
+}
+
+#neptune{
+    width: 134px; 
+    animation: rotate 150s linear infinite;
+    pointer-events: none;
+    position: relative;
+    bottom: 2px;
+    right: 5px;
+}
+
+#neptune-box{
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    position: absolute;
+    left: 1660px;
+    bottom: 404px; 
+}
+
+#neptune-box:hover{
+    cursor: pointer;
+    transform: scale(1.016);
+}
+
+
+#neptune-info{
+    opacity: 0;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    border-radius: 16px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+#neptune-info *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#neptune-info h4{
+    margin-top: 10px;
+}
+
+#neptune-text{
+    width: 90px;
+    height: 50px;
+    border-radius: 14px;
+    position: relative;
+    bottom: -21px;
+    left: 15px;
+    z-index: 5;
+    background-color: rgb(15, 112, 52);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bloomer DEMO, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#neptune-text span{
+    color: rgb(19, 194, 194);
+    font-size: 20px; 
+}
+
+
+#planet-info{
+    position: absolute;
+    right: 260px;
+    top: 16px;
+    width: 150px;
+    height: 140px;
+    border-radius: 16px;
+}
+
+#mercury-info{
+    opacity: 0;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    border-radius: 16px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+#mercury-info *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#mercury-info h4{
+    margin-top: 10px;
+}
+
+@keyframes rotate {
+    0%{rotate: 0deg;}
+    100%{rotate: 360deg;}
+}
+
+@keyframes animation-popup {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes animation-pooff {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+
+/* PAGES CSS */
+
+#Merc-page{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(34, 30, 37);
+    z-index: 15;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#merc-hold{
+    animation: rotate 240s infinite linear;
+    border-radius: 50%;
+}
+
+#merc-hold:hover{
+    transform: scale(1.007);
+}
+
+#Merc-page-img{
+    width: 400px;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+#helper{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    min-width: 250px;
+    width: 20vw;
+    height: 150px;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+}
+
+#helper h4{
+    margin: 8px;
+}
+
+#land-box{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    rotate: 125deg;
+    position: relative;
+    bottom: 200px;
+    left: 75px;
+}
+
+#land-box * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#land-box img {
+    width: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+#land-box h5 {
+    width: 50px;
+    position: relative;
+    left: 7px;
+    bottom: 38px;
+}
+
+
+#merc-infoz{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: 184px;
+    width: 16vw;
+    height: 480px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+    text-align: center;
+}
+
+#merc-infoz h2{
+    margin-bottom: 0px;
+}
+
+#back-1{
+    position: absolute;
+    bottom: 30px;
+    width: 150px;
+    height: 65px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 38px;
+}
+
+#back-1:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* LEPEN 2 */
+
+
+
+
+
+
+
+
+
+#Neptune-page{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(7, 6, 7);
+    z-index: 15;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Neptune-hold{
+    animation: rotate 240s infinite linear;
+    border-radius: 50%;
+}
+
+#Neptune-hold:hover{
+    transform: scale(1.007);
+}
+
+#Nept-page-img{
+    width: 370px;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+#helper2{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    min-width: 250px;
+    width: 20vw;
+    height: 150px;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+}
+
+#helper2 h4{
+    margin: 8px;
+}
+
+#land-box2{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    rotate: 125deg;
+    position: relative;
+    bottom: 200px;
+    left: 75px;
+}
+
+#land-box2 * {
+    margin: 0px;
+}
+
+#land-box2 img {
+    width: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+#land-box2 h5 {
+    width: 50px;
+    position: relative;
+    left: 7px;
+    bottom: 38px;
+}
+
+
+#Neptune-infoz{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    min-width: 190px;
+    width: 16vw;
+    height: 400px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+    text-align: center;
+}
+
+#Neptune-infoz h2{
+    margin-bottom: 0px;
+}
+
+#back-2{
+    position: absolute;
+    bottom: 30px;
+    width: 150px;
+    height: 65px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 38px;
+}
+
+#back-2:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Uranus */
+
+
+
+
+
+
+
+
+
+
+#uranus-page{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(7, 6, 7);
+    z-index: 15;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uranus-hold{
+    animation: rotate 240s infinite linear;
+    border-radius: 50%;
+}
+
+#uranus-hold:hover{
+    transform: scale(1.007);
+}
+
+#Ur-page-img{
+    width: 850px;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+#helper3{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    min-width: 250px;
+    width: 20vw;
+    height: 150px;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+}
+
+#helper3 h4{
+    margin: 8px;
+}
+
+#land-box3{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    rotate: 125deg;
+    position: relative;
+    bottom: 200px;
+    left: 75px;
+}
+
+#land-box3 * {
+    margin: 0px;
+}
+
+#land-box3 img {
+    width: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+#land-box3 h5 {
+    width: 50px;
+    position: relative;
+    left: 7px;
+    bottom: 38px;
+}
+
+
+#uranus-infoz{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    min-width: 190px;
+    width: 16vw;
+    height: 400px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+    text-align: center;
+}
+
+#uranus-infoz h2{
+    margin-bottom: 0px;
+}
+
+#back-3{
+    position: absolute;
+    bottom: 30px;
+    width: 150px;
+    height: 65px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 38px;
+}
+
+#back-3:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SATURN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+#saturn-page{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(7, 6, 7);
+    z-index: 15;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#saturn-hold{
+    animation: rotate 240s infinite linear;
+    border-radius: 50%;
+}
+
+#saturn-hold:hover{
+    transform: scale(1.007);
+}
+
+#satu-page-img{
+    width: 670px;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+#helper4{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    min-width: 250px;
+    width: 20vw;
+    height: 150px;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+}
+
+#helper4 h4{
+    margin: 8px;
+}
+
+#land-box4{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    rotate: 125deg;
+    position: relative;
+    bottom: 200px;
+    left: 75px;
+}
+
+#land-box4 * {
+    margin: 0px;
+}
+
+#land-box4 img {
+    width: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+#land-box4 h5 {
+    width: 50px;
+    position: relative;
+    left: 7px;
+    bottom: 38px;
+}
+
+
+#saturn-infoz{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    min-width: 190px;
+    width: 16vw;
+    height: 400px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+    text-align: center;
+}
+
+#saturn-infoz h2{
+    margin-bottom: 0px;
+}
+
+#back-4{
+    position: absolute;
+    bottom: 30px;
+    width: 150px;
+    height: 65px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 38px;
+}
+
+#back-4:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* JUPITER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+#jupiter-page{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(7, 6, 7);
+    z-index: 15;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jupiter-hold{
+    animation: rotate 240s infinite linear;
+    border-radius: 50%;
+}
+
+#jupiter-hold:hover{
+    transform: scale(1.007);
+}
+
+#jupi-page-img{
+    width: 670px;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+#helper5{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    min-width: 250px;
+    width: 20vw;
+    height: 150px;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+}
+
+#helper5 h4{
+    margin: 8px;
+}
+
+#land-box5{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    rotate: 125deg;
+    position: relative;
+    bottom: 200px;
+    left: 75px;
+}
+
+#land-box5 * {
+    margin: 0px;
+}
+
+#land-box5 img {
+    width: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+#land-box5 h5 {
+    width: 50px;
+    position: relative;
+    left: 7px;
+    bottom: 38px;
+}
+
+
+#jupiter-infoz{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    min-width: 190px;
+    width: 16vw;
+    height: 400px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+    text-align: center;
+}
+
+#jupiter-infoz h2{
+    margin-bottom: 0px;
+}
+
+#back-5{
+    position: absolute;
+    bottom: 30px;
+    width: 150px;
+    height: 65px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 38px;
+}
+
+#back-5:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MARS */
+
+
+
+
+
+
+
+
+
+
+
+#mars-page{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(7, 6, 7);
+    z-index: 15;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mars-hold{
+    animation: rotate 240s infinite linear;
+    border-radius: 50%;
+}
+
+#mars-hold:hover{
+    transform: scale(1.007);
+}
+
+#mars-page-img{
+    width: 670px;
+    pointer-events: none;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    top: 150px;
+}
+
+#helper6{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    min-width: 250px;
+    width: 20vw;
+    height: 150px;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+}
+
+#helper6 h4{
+    margin: 8px;
+}
+
+#land-box6{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    rotate: 125deg;
+    position: relative;
+    bottom: 200px;
+    left: 75px;
+}
+
+#land-box6 * {
+    margin: 0px;
+}
+
+#land-box6 img {
+    width: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+#land-box6 h5 {
+    width: 50px;
+    position: relative;
+    left: 7px;
+    bottom: 38px;
+}
+
+
+#mars-infoz{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    min-width: 190px;
+    width: 16vw;
+    height: 400px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+    text-align: center;
+}
+
+#mars-infoz h2{
+    margin-bottom: 0px;
+}
+
+#back-6{
+    position: absolute;
+    bottom: 30px;
+    width: 150px;
+    height: 65px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 38px;
+}
+
+#back-6:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EARTH */
+
+
+
+#earth-page{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(7, 6, 7);
+    z-index: 15;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#earth-hold{
+    animation: rotate 240s infinite linear;
+    border-radius: 50%;
+}
+
+#earth-hold:hover{
+    transform: scale(1.007);
+}
+
+#earth-page-img{
+    width: 410px;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+#helper7{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    min-width: 250px;
+    width: 20vw;
+    height: 150px;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+}
+
+#helper7 h4{
+    margin: 8px;
+}
+
+#land-box7{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    rotate: 125deg;
+    position: relative;
+    bottom: 200px;
+    left: 75px;
+}
+
+#land-box7 * {
+    margin: 0px;
+}
+
+#land-box7 img {
+    width: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+#land-box7 h5 {
+    width: 50px;
+    position: relative;
+    left: 7px;
+    bottom: 38px;
+}
+
+
+#earth-infoz{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    min-width: 190px;
+    width: 16vw;
+    height: 400px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+    text-align: center;
+}
+
+#earth-infoz h2{
+    margin-bottom: 0px;
+}
+
+#back-7{
+    position: absolute;
+    bottom: 30px;
+    width: 150px;
+    height: 65px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 38px;
+}
+
+#back-7:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Venus */
+
+
+
+
+
+
+
+
+
+
+
+
+#venus-page{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(7, 6, 7);
+    z-index: 15;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#venus-hold{
+    animation: rotate 240s infinite linear;
+    border-radius: 50%;
+}
+
+#venus-hold:hover{
+    transform: scale(1.007);
+}
+
+#venus-page-img{
+    width: 520px;
+    margin: 0px;
+    pointer-events: none;
+    border-radius: 50%;
+    position: relative;
+    top: 170px;
+    left: 15px;
+}
+
+#helper8{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(10, 236, 97);
+    min-width: 250px;
+    width: 20vw;
+    height: 150px;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+}
+
+#helper8 h4{
+    margin: 8px;
+}
+
+#land-box8{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    rotate: 125deg;
+    position: relative;
+    bottom: 200px;
+    left: 75px;
+}
+
+#land-box8 * {
+    margin: 0px;
+}
+
+#land-box8 img {
+    width: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+#land-box8 h5 {
+    width: 50px;
+    position: relative;
+    left: 7px;
+    bottom: 38px;
+}
+
+
+#venus-infoz{
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    min-width: 190px;
+    width: 16vw;
+    height: 400px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px;
+    text-align: center;
+}
+
+#venus-infoz h2{
+    margin-bottom: 0px;
+}
+
+#back-8{
+    position: absolute;
+    bottom: 30px;
+    width: 150px;
+    height: 65px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    color: rgb(21, 218, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 38px;
+}
+
+#back-8:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+land-box
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.crash-1 div{
+    position: relative;
+    left: -180px;
+    top: -235px;
+}
+
+.crash-2 div{
+    position: relative;
+    left: -245px;
+    top: -310px;
+    rotate: 1383deg;
+}
+
+.crash-3 div{
+    position: relative;
+    left: -40px;
+    top: -155px;
+}
+
+.crash-4 div{
+    position: relative;
+    left: -140px;
+    top: -155px;
+}
+
+
+.crash-5 div{
+    position: relative;
+    left: -10px;
+    top: -185px;
+    rotate: 132deg;
+}
+
+.crash-6 div{
+    position: relative;
+    left: -110px;
+    top: -125px;
+    rotate: 32deg;
+}
+
+.crash-7 div{
+    position: relative;
+    left: -112px;
+    top: -105px;
+    rotate: 162deg;
+}
+
+.crash-8 div{
+    position: relative;
+    left: -11px;
+    top: -225px;
+    rotate: 213deg;
+}
+
+.crash-9 div{
+    position: relative;
+    left: -110px;
+    top: -355px;
+    rotate: 192deg;
+}
+
+.crash-10 div{
+    position: relative;
+    left: -320px;
+    top: -185px;
+    rotate: 0deg;
+}
+
+.crash-11 div{
+    position: relative;
+    left: -300px;
+    top: -155px;
+    rotate: 96deg;
+}
+
+.crash-12 div{
+    position: relative;
+    left: -2740px;
+    top: -195px;
+    rotate: 196deg;
+}
+
+.crash-13 div{
+    position: relative;
+    left: -250px;
+    top: -125px;
+    rotate: 296deg;
+}
+
+.crash-14 div{
+    position: relative;
+    left: -350px;
+    top: -65px;
+    rotate: 396deg;
+}
+
+.crash-15 div{
+    position: relative;
+    left: -370px;
+    top: -155px;
+    rotate: 396deg;
+}
+
+.crash-17 div{
+    position: relative;
+    left: -270px;
+    top: -145px;
+    rotate: 396deg;
+}
+
+.crash-18 div{
+    position: relative;
+    left: -470px;
+    top: -115px;
+    rotate: 396deg;
+}
+
+.crash-19 div{
+    position: relative;
+    left: -360px;
+    top: 25px;
+    rotate: 396deg;
+}
+
+.crash-20 div{
+    position: relative;
+    left: -370px;
+    top: -195px;
+    rotate: 196deg;
+}
+
+.crash-21 div{
+    position: relative;
+    left: -375px;
+    top: 134px;
+    rotate: 296deg;
+}
+
+.crash-26 div{
+    position: relative;
+    left: -180px;
+    bottom: -80px;
+}
+
+.crash-22 div{
+    position: relative;
+    left: -310px;
+    bottom: -80px;
+    rotate: 132deg;
+}
+
+
+
+@keyframes go_around {
+    0%{height: 100%;}
+    0%{opacity: 0;}
+    10%{opacity: 1;}
+    10%{height: 105%;}
+    100%{rotate: 360deg;}
+}
+
+@keyframes go_around-self {
+    50%{rotate: -360deg;}
+    100%{rotate: -720deg;}
+}
+
+
+
+#Star1{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px 3px white;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 600px;
+    animation: starz1 30s infinite;
+    z-index: 25;
+}
+
+#Star2{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px 3px white;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 600px;
+    animation: starz2 30s infinite;
+    z-index: 25;
+}
+
+#Star3{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px 3px white;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 600px;
+    animation: starz3 30s infinite;
+    z-index: 25;
+}
+
+#Star4{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px 3px white;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 600px;
+    animation: starz4 30s infinite;
+    z-index: 25;
+}
+
+#Star5{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px 3px white;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 600px;
+    animation: starz5 30s infinite;
+    z-index: 25;
+}
+
+@keyframes starz1 {
+    0%{left: -2200px;}
+    0%{top: -2200px;}
+    21%{left: 1000px;}
+    21%{top: -600px;}
+    30%{left: 2100px;}
+    30%{top: 3100px;}
+    100%{left: 12200px;}
+    100%{top: 12600px;}
+}
+
+@keyframes starz2 {
+    0%{left: -1200px;}
+    0%{top: -1200px;}
+    91%{left: -1100px;}
+    91%{top: -1200px;}
+    100%{left: 5800px;}
+    100%{top: 4200px;}
+    
+}
+
+@keyframes starz3 {
+    0%{left: -2200px;}
+    0%{top: -2200px;}
+    63%{left: 0px;}
+    63%{top: 0px;}
+    72%{left: 3200px;}
+    72%{top: 2600px;}
+    100%{left: 12200px;}
+    100%{top: 12600px;}
+}
+
+@keyframes starz4 {
+    0%{left: -2200px;}
+    0%{top: -2200px;}
+    11%{left: 1100px;}
+    11%{top: -500px;}
+    20%{left: 200px;}
+    20%{top: 2900px;}
+    100%{left: 12200px;}
+    100%{top: 12600px;}
+}
+
+@keyframes starz5 {
+    0%{left: -2200px;}
+    0%{top: -2200px;}
+    81%{left: -200px;}
+    81%{top: -600px;}
+    90%{left: 5900px;}
+    90%{top: 2600px;}
+    100%{left: 12200px;}
+    100%{top: 12600px;}
+}
+
+
+
+
+/* EXTRA INFO CSS */
+
+
+
+
+
+#Extra-info-earth{
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(33, 158, 158, 0.637);
+    background-color: rgba(21, 177, 177, 0.637);
+    border-radius: 12px;
+    position: absolute;
+    left: 35px;
+    top: 205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Extra-info-earth:hover{
+    background-color: rgba(21, 177, 177, 0.678);
+    cursor: pointer;
+}
+
+#line-dot{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+#line{
+    width: 35px;
+    height: 6px;
+    background-color: rgb(255, 94, 0);
+    border-radius: 2px;
+}
+
+#dot{
+    width: 7px;
+    height: 6px;
+    background-color: rgb(255, 94, 0);
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+/* THE EXTRA INFO */
+
+@keyframes makebikerz 
+{
+    0%{width: 160px;}
+    100%{width:  480px;}
+    0%{height: 280px;}
+    100%{height: 680px;}
+    0%{opacity: 0.3;}
+    100%{opacity: 1;}
+    0%{color: rgba(255, 255, 255, 0);}
+    50%{color: rgba(255, 255, 255, 0);}
+    100%{color: white;}
+    0%{text-shadow: 2px 2px 14px rgba(0, 0, 0, 0);}
+    50%{text-shadow: 2px 2px 14px rgba(0, 0, 0, 0);}
+    100%{text-shadow: 2px 2px 14px black;}
+}
+
+@keyframes makesmaller {
+    100%{width: 160px;}
+    0%{width:  480px;}
+    100%{height: 280px;}
+    0%{height: 680px;}
+    100%{opacity: 0;}
+    0%{opacity: 1;}
+    100%{color: rgba(255, 255, 255, 0);}
+    50%{color: rgba(255, 255, 255, 0);}
+    0%{color: white;}
+    100%{text-shadow: 2px 2px 14px rgba(0, 0, 0, 0);}
+    50%{text-shadow: 2px 2px 14px rgba(0, 0, 0, 0);}
+    0%{text-shadow: 2px 2px 14px black;}
+}
+
+.extra-info{
+    opacity: 0;
+    width: 480px;
+    padding: 13px;
+    height: 680px;
+    border: 2px solid rgba(33, 158, 158, 0.589);
+    background-color: rgba(21, 177, 177, 0.521);
+    border-radius: 10px;
+    position: absolute;
+    color: white;
+    font-size: 74px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 14px black;
+    font-family: "Bloomer DEMO";
+    flex-direction: column;
+    overflow-y: scroll;
+    
+}
+
+.extra-info::-webkit-scrollbar{
+    width: 16px;
+}
+
+.extra-info::-webkit-scrollbar-track{
+    background: rgba(26, 124, 124, 0.589);
+    border-radius: 30px;
+    position: absolute;
+    left: 10px;
+    border: 2px solid rgba(20, 199, 199, 0.521);
+}
+
+.extra-info::-webkit-scrollbar-thumb{
+    background: rgba(29, 173, 173, 0.589);
+    border-radius: 10px;
+}
+
+.extra-info::-webkit-scrollbar-thumb:hover{
+    background: rgba(20, 199, 199, 0.521);
+    border-radius: 10px;
+}
+
+.extra-info span{
+    justify-self: center;
+}
+
+#mission-info-main{
+    width: 97%;
+    border: 2px solid rgba(29, 173, 173, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    height: 94px;
+    min-height: 90px;
+    border-radius: 12px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#mission-name{
+    margin: 5px;
+    border-radius: 12px;
+    width: 110px;
+    height: 80px;
+    border: 2px solid rgba(25, 223, 223, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#mission-impactdate{
+    margin: 5px;
+    font-weight: bolder;
+    border-radius: 12px;
+    width: 110px;
+    height: 80px;
+    border: 2px solid rgba(25, 223, 223, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+#mission-nation{
+    margin: 5px;
+    border-radius: 12px;
+    width: 110px;
+    height: 80px;
+    border: 2px solid rgba(25, 223, 223, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#mission-nation img{
+    width: 70px;
+    box-shadow: 0px 0px 6px 1px black;
+}
+
+#mission-result{
+    margin: 5px;
+    border-radius: 12px;
+    width: 110px;
+    height: 80px;
+    border: 2px solid rgba(25, 223, 223, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 38px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+#extra-info-epxlain{
+    width: 97%;
+    height: 52px;
+    border: 2px solid rgba(25, 223, 223, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#extra-info-epxlain-1{
+    border: 2px solid rgba(25, 223, 223, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    width: 22%;
+    height: 90%;
+    border-radius: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 1px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#extra-info-epxlain-2{
+    border: 2px solid rgba(25, 223, 223, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    width: 22%;
+    height: 90%;
+    border-radius: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 1px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#extra-info-epxlain-3{
+    border: 2px solid rgba(25, 223, 223, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    width: 22%;
+    height: 90%;
+    border-radius: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 1px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#extra-info-epxlain-4{
+    border: 2px solid rgba(25, 223, 223, 0.589);
+    background-color: rgba(20, 199, 199, 0.521);
+    width: 22%;
+    height: 90%;
+    border-radius: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 1px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
